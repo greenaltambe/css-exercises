@@ -14,7 +14,6 @@ body {
   align-items: center;
   font-size: x-large;
   font-weight: bolder;
-  padding: 0px 16px;
 }
 
 .footer {
@@ -26,11 +25,17 @@ body {
   align-items: center;
 }
 
+.content {
+  flex: 1;
+  display: flex;
+}
+
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
   flex-shrink: 0;
+  padding: 16px;
 }
 
 ul {
@@ -40,20 +45,20 @@ ul {
 }
 
 li {
-  padding: 8px;
-
+  margin-bottom: 16px;
 }
 
 a {
   text-decoration: none;
   color: white;
+  font-size: 24px;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
-  align-content: space-between;
+  padding: 48px;
+  gap: 32px;
 }
 
 .card {
@@ -61,12 +66,5 @@ a {
   box-shadow: 2px 4px 16px rgba(0, 0, 0, .06);
   border-radius: 4px;
   padding: 16px;
-  max-width: 250px;
-  min-height: 200px;
-  margin: 16px;
+  width: 300px;
 }
-
-.content {
-  display: flex;
-}
-
